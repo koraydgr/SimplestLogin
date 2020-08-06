@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>The Simplest Log-in System</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <div class="row mt-5">
+      <div class="col-4 offset-4 border border-danger">
+
+        <!-- Edit action field according to your post-action url -->
+        <form action="http://localhost:1234/loged" method="post">
+
+          <div class="form-group">
+            <label for="name">Username</label>
+            <input class="form-control form-control-sm" type="text" name="name" id="name">
+          </div>
+
+          <div class="form-group">
+            <label for="pwd">Password</label>
+            <input class="form-control form-control-sm" type="password" name="pwd" id="pwd">
+          </div>
+
+          <button class="btn btn-danger" type="submit">Send</button>
+
+        </form>
+      </div>
+    </div>
+
+  </body>
+
+</html>
